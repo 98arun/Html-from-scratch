@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalized.css">
+    <!--* this is a normalized css which is used to set our webpage with no css -->
+    <title>HTML Assignment
+    </title>
+</head>
+
+<body>
+    <style>
+        /* this way we use internally style tag*/
+        .pre {
+            color: brown;
+        }
+
+        body {
+            text-align: center;
+            background-color: skyblue;
+        }
+
+        /**An unvisited link is underlined and blue
+        A visited link is underlined and darkblue
+        An active link is underlined and red
+        a hover link is line through and grey*/
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkblue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: grey;
+            background-color: transparent;
+            text-decoration: line-through;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        table {
+            width: 50%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
+    <!--* we start our html asssignment from comments. so this is a comment not a code. this is only visible in our code but this line is not visible in our web page.-->
+
+    <!--* in html we have six types of headings and heading is a block level element. which means its cover 100% of width of our webpage -->
+    <h1>This is a heading 1</h1>
+    <h2>This is a heading 2</h2>
+    <h3>This is a heading 3</h3>
+    <h4>This is a heading 4</h4>
+    <h5>This is a heading 5</h5>
+    <h6>This is a heading 6</h6>
+
+    <!--* this is a horizontal line tag its draw a horizontal line in our webpage  -->
+    <hr>
+    <!--* this is a paragraph tag its also a block level element and cover full width of our web page-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iure non unde officia ratione officiis quis fugit esse
+        distinctio quae! Labore beatae earum eaque repellendus
+        corporis pariatur laborum ex, omnis magni.</p>
+
+    <!--* this is a preformatted text its display as it is return in our code and its also a block level element-->
+    <pre>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Iure non unde officia ratione officiis quis fugit esse
+    distinctio quae! Labore beatae earum eaque repellendus
+    corporis pariatur laborum ex, omnis magni.
+    </pre>
+    <!--* style tag most important tag it gives styling with help of css we can you style tag as inlne style or internal style -->
+
+    <pre style="border: 2px solid rgb(172, 99, 99);"> <!--* this way we use inline style tag-->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Iure non unde officia ratione officiis quis fugit esse
+    distinctio quae! Labore beatae earum eaque repellendus
+    corporis pariatur laborum ex, omnis magni.
+    </pre>
+
+    <pre class="pre">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Iure non unde officia ratione officiis quis fugit esse
+    distinctio quae! Labore beatae earum eaque repellendus
+    corporis pariatur laborum ex, omnis magni.
+    </pre>
+    <!--* there is following formatting text and these text are inline level element-->
+    <!--* break tag is used for break the liye and start from new line-->
+    <i>This is itelic text .</i><br>
+    <em>This is Emphasized text. which is similar to itelic text</em><br>
+    <strong><sub>Subcript text</sub>this is important tag.this element defines text with strong
+        importance.<sup>Superscript text</sup></strong><br>
+    <mark>THIS IS MARK TAG</mark><br>
+    <b>this element defines bold text, without any extra importance</b><br>
+    <small>this is a small text.</small><br>
+    <del>this is a delet text</del><br>
+    <ins>this is inserted text.</ins><br>
+    <!--* it is a block level element.blockquote element defines a section that is quoted from another source and we can use this in our blog postas well. quotation tag is used for mark a quotation in our text -->
+    <blockquote>
+        <q> For 50 years, WWF has been protecting the future of nature.
+            The world's leading conservation organization,
+            WWF works in 100 countries and is supported by
+            1.2 million members in the United States and
+            close to 5 million globally.</q>
+    </blockquote>
+    <!--* abbreviation tag help in search engine optimization. in title we return hello this is for search in browers and cite tag is use for define some creative work which is return in itellic  -->
+    <abbr title="Hello"><cite> Hello world!</cite></abbr>
+    <!--* this tag defines the contact information and it's return text in itellic formate-->
+    <address>
+        arun gupta.<br>
+        web developer:<br>
+        morena mp<br>
+    </address>
+    <!--*span is a inline element. we can use color in rgb.hex,hsl. where rgb stands for red green blue and maximum value of color is 255.hex color return by #111111 and in hsl color color we give value in percentage   
+    -->
+    <span style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</span>
+    <span style="background-color:#ff6347;">#ff6347</span>
+    <span style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</span><br>
+    <hr>
+
+    <!--* where is a anchor tag which has a hyperlink. in anchor tag link does not have to be text. we can use image or any other element in link . alink is underlined and blue.-->
+    <!--* we can target attribute in html link which decide where to open the link. if we use _self it Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window-->
+    <h4>HTML hyperlinks</h4>
+    <a href="https://www.w3schools.com/" target="_blank" active>target blank Visit W3Schools!</a><br>
+    <a href="https://www.w3schools.com/" target="_self">target self Visit W3Schools!</a><br>
+    <a href="https://www.w3schools.com/" target="_parent">target parent Visit W3Schools!</a><br>
+    <a href="https://www.w3schools.com/" target="_top">target top Visit W3Schools!</a>
+    <!--*use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):-->
+    <a href="mailto:someone@example.com">Send email</a>
+    <hr>
+    <!--* first image is simple image and second image is shown as a link -->
+    <img src="1.jpg" alt="bat" width="300" height="250">
+    <a href="https://www.w3schools.com/" target="_blank" active><img src="2.jpg" alt="ironman" width="300" height="250">
+    </a><br>
+    <!--* this is a html table contains some data  -->
+    <h2>HTML Tables</h2>
+
+    <table class="one">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <!--* there are three type of HTML list ordered list, unordered ;list, discription list. An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.This list items will be marked with bullets  by default:-->
+    <ul style="list-style-type:none">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <!--*An ordered list starts with the <ol> tag.The list items will be marked with numbers by default:-->
+    <ol style="list-style-type:none">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <!--*A description list is a list of terms, with a description of each term.The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term-->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+    <hr>
+    <!--*iframe is most important tag in HTML. iframe is used to display a web page within a web page -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LLF3GMfNEYU" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe src="normalized.css" width="560" height="315" title="Iframe Example"></iframe>
+
+
+
+</body>
+
+</html>
